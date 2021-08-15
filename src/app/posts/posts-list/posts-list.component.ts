@@ -12,6 +12,7 @@ export class PostsListComponent implements OnInit {
 
   id: number = this.router.snapshot.params.id
   postData: Post[] = [];
+  p: number = 1;
 
   constructor(
     private http: PostService,

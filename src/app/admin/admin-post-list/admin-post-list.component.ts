@@ -9,6 +9,7 @@ import { PostService } from 'src/app/shared/service/post.service';
 })
 export class AdminPostListComponent implements OnInit {
   postData: Post[] = [];
+  p: number = 1;
   constructor(private http: PostService) { }
 
   ngOnInit(): void {

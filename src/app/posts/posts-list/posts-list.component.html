@@ -1,10 +1,12 @@
 <h1>პოსტები</h1>
 <div class="list">
 
-  <div class="list-item"  *ngFor="let post of postData" [routerLink]="['/posts/details', post.id]">
+  <div class="list-item"
+    *ngFor="let post of postData | paginate: { itemsPerPage: 8, currentPage: p }"
+    [routerLink]="['/posts/details', post.id]">
     <div class="img" style="background-image: url('{{post.img}}');"></div>
     <div class="title">{{post.title}}</div>
     <strong class="description">{{post.shortDescription}}</strong>
   </div>
-
 </div>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
