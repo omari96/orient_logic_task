@@ -33,5 +33,4 @@ export class UserDetailsComponent implements OnInit {
       this.postData = res as Post[]
     })
   }
-
 }
