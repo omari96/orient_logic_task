@@ -24,7 +24,6 @@ export class UserDetailsComponent implements OnInit {
   getUser(id: number) {
     this.http.getUser(id).subscribe((res: any) => {
       this.user = res;
-      console.log('res', res);
       this.getUserPosts(res.id);
     })
   }
@@ -32,7 +31,6 @@ export class UserDetailsComponent implements OnInit {
   getUserPosts(id: number) {
     this.http.getPostData(id).subscribe((res) => {
       this.postData = res as Post[]
-      console.log(res)
     })
   }
 

@@ -1,0 +1,25 @@
+:host {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  min-height: 100vh;
+  height: 100%;
+
+  h1 {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  button{
+    width: 115px;
+    height: 40px;
+    background-color: #5051de;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+}

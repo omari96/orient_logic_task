@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Post } from '../models/post.model';
+import { Post } from '../../posts/models/post.model';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +17,18 @@ export class PostService {
 
   getCurrentData(id: number) {
     return this.http.get(`${this.url}` + `${id}`)
+  }
+
+  addPost(post: Post) {
+    return this.http.post(`${this.url}`, post)
+  }
+
+  updateData(id: number, data: Post) {
+    return this.http.put(`${this.url}` + `${id}`, data)
+  }
+
+  deletePost(post: Post) {
+    return this.http.delete(`${this.url}/${post.id}`)
   }
 
 }

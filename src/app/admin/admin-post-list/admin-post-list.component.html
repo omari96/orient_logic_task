@@ -1,0 +1,32 @@
+<section>
+
+  <div class="container">
+
+    <button type="button" routerLink="/admin/add">Add Post</button>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>img</th>
+          <th>title</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let post of postData"  [routerLink]=" ['update', post.id]">
+          <td>{{post.id}}</td>
+          <td>
+            <div class="img" style="background-image: url('{{post.img}}');"></div>
+          </td>
+          <td>{{post.title}}</td>
+          <td class="action">
+            <span>edit</span>
+            <span (click)="deletePost(post); $event.stopPropagation();">delete</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>
