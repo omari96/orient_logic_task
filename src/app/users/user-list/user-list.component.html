@@ -1,0 +1,12 @@
+<h1>მომხმარებლები</h1>
+<div class="list">
+  <div class="list-item" *ngFor="let user of userData">
+    <div class="img" style="background-image: url('{{user.img}}');"></div>
+    <div class="fullName">
+      <div class="name">{{user.firstName}}</div>
+      <div class="lastName">{{user.lastName}}</div>
+    </div>
+    <button [routerLink]="['details', user.id]">More</button>
+  </div>
+
+</div>
