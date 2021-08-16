@@ -13,7 +13,7 @@ import { Location } from '@angular/common';
 })
 export class UpdatePostComponent implements OnInit {
   formGroup: FormGroup;
-  id :number = this.router.snapshot.params.id;
+  id: number = this.router.snapshot.params.id;
   constructor(
     private formService: SharedFormService,
     private http: PostService,
@@ -29,15 +29,15 @@ export class UpdatePostComponent implements OnInit {
     const formData: Post = this.formGroup.value;
     const post: Post = {
       id: formData.id,
-      title:formData.title,
+      userId: formData.userId,
+      title: formData.title,
       img: formData.img,
       description: formData.description,
       shortDescription: formData.shortDescription,
     }
     this.http.updateData(this.router.snapshot.params.id, post).subscribe((res) =>
-      console.log(res)
-    )
-    this._location.back();
+
+      this._location.back());
   }
 
   currentPost(id: number) {

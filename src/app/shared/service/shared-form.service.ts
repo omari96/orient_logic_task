@@ -12,6 +12,7 @@ export class SharedFormService {
   buildUserForm(result: Post) {
 
     return new FormGroup({
+      userId: new FormControl(result['userId'], [Validators.required]),
       id: new FormControl(result['id'], [Validators.required]),
       title: new FormControl(result['title'], [Validators.required]),
       img: new FormControl(result['img']),
@@ -20,6 +21,7 @@ export class SharedFormService {
     })
 
   }
+
 
 
 }

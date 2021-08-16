@@ -7,6 +7,7 @@
     font-size: 20px;
     margin-top: 20px;
     font-weight: bold;
+    font-family: 'Muli';
   }
   .list {
     width: 100%;
@@ -38,6 +39,7 @@
         white-space: nowrap;
         color: #376bb1;
         margin-bottom: 5px;
+        font-family: 'Muli';
       }
       .description {
         margin-top: 10px;
@@ -51,6 +53,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 3; /* number of lines to show */
         -webkit-box-orient: vertical;
+        font-family: 'Muli';
       }
     }
   }

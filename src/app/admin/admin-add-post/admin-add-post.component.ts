@@ -22,6 +22,7 @@ export class AdminAddPostComponent implements OnInit {
   ngOnInit(): void {
     this.formGroup = this.formService.buildUserForm({
       id: null,
+      userId: null,
       title: '',
       img: '',
       description: '',
@@ -31,6 +32,7 @@ export class AdminAddPostComponent implements OnInit {
 
   addPost() {
     this.http.addPost(this.formGroup.value).subscribe((res) => {
+
     })
     this._location.back();
   }

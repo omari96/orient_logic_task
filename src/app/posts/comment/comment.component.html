@@ -1,0 +1,12 @@
+<h1>კომენტარები</h1>
+<div class="comment-box" *ngFor="let comment of commentData">
+  <div class="user-cont">
+    <div class="img" style="background-image: url('{{comment.img}}');"></div>
+    <div class="user">
+      <span class="firstName">{{comment.firstName}}</span>
+      <span class="lastName">{{comment.lastName}}</span>
+    </div>
+  </div>
+  <div class="comment-text">{{comment.text}}
+  </div>
+</div>

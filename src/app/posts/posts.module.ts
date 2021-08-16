@@ -4,6 +4,7 @@ import { PostsListComponent } from './posts-list/posts-list.component';
 import { UserRoutingModule } from './post-routing.module';
 import { PostDetailsComponent } from './post-details/post-details.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { CommentComponent } from './comment/comment.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
   ],
   declarations: [
     PostsListComponent,
-    PostDetailsComponent
+    PostDetailsComponent,
+    CommentComponent
   ],
 })
 export class PostsModule { }

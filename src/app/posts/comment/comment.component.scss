@@ -1,0 +1,52 @@
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: 'Muli';
+}
+.comment-box {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  padding: 10px 10px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 20px;
+
+  .user-cont {
+    display: flex;
+    align-items: center;
+    .img {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      margin-right: 20px;
+      background-position: center center;
+      background-size: contain;
+    }
+    .user {
+      .firstName {
+        font-size: 16px;
+        font-weight: bold;
+        color: #007bff;
+        margin-right: 10px;
+        font-family: 'Muli';
+      }
+      .lastName {
+        font-size: 16px;
+        font-weight: bold;
+        color: #007bff;
+        font-family: 'Muli';
+      }
+    }
+  }
+  .comment-text {
+    font-size: 15px;
+    padding: 20px 0px 15px 0px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    font-family: 'Muli';
+  }
+}

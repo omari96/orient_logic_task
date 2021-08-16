@@ -1,5 +1,12 @@
 <form [formGroup]="formGroup">
 
+  <label>user</label>
+  <select formControlName="userId" >
+    <option *ngFor="let user of userData" >
+      {{ user.firstName }} {{user.lastName}}
+    </option>
+  </select>
+
   <label>title</label>
   <input type="text" placeholder="Enter title" formControlName="title" required>
 
@@ -7,10 +14,11 @@
   <input type="text" placeholder="Enter img URL" formControlName="img" required>
 
   <label>shortDescription</label>
-  <input type="text" placeholder="Enter shortDescription" formControlName="shortDescription" required>
+  <input type="text" placeholder="Enter shortDescription"
+    formControlName="shortDescription" required>
 
   <label>description</label>
-  <input type="text" placeholder="Enter description" formControlName="description" required>
+  <input type="text" placeholder="Enter description" formControlName="description"
+    required>
 
 </form>
-

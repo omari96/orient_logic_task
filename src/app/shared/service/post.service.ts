@@ -10,6 +10,7 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   url: string = "http://localhost:3000/Posts/";
+  urlComments: string = "http://localhost:3000/Comments/";
 
   getPosts() {
     return this.http.get<Post[]>(this.url);
@@ -17,6 +18,10 @@ export class PostService {
 
   getCurrentData(id: number) {
     return this.http.get(`${this.url}` + `${id}`)
+  }
+
+  getCurrentCommentData(id: number) {
+    return this.http.get(`${this.urlComments}` + `${id}`)
   }
 
   addPost(post: Post) {

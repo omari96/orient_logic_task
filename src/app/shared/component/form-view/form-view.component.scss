@@ -6,6 +6,23 @@ form {
     color: #376bb1;
     font-weight: bold;
     margin: 20px 0;
+    font-family: 'Muli';
+  }
+  select{
+    width: 100%;
+    min-width: 150px;
+    max-width: 800px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 15px;
+    color: #376bb1;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    font-family: "Muli";
   }
   input{
     width: 100%;
@@ -21,5 +38,6 @@ form {
     border-radius: 5px;
     padding-left: 15px;
     border: 1px solid rgba(0, 0, 0, 0.12);
+    font-family: 'Muli';
   }
 }
