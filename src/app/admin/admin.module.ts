@@ -6,7 +6,7 @@ import { AdminAddPostComponent } from './admin-add-post/admin-add-post.component
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdatePostComponent } from './update-post/update-post.component';
-import {NgxPaginationModule} from 'ngx-pagination';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [

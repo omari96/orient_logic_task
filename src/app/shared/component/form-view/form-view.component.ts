@@ -23,5 +23,4 @@ export class FormViewComponent implements OnInit {
       this.userData = res;
     });
   }
-
 }
